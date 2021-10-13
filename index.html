@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="gannt-d3.js"></script>
+    
+    <div>
+
+        <div id="customGantt"></div>
+        <button onClick="evalNewGanttInput();">make Gantt</button>
+        <br>
+        <textarea id="customGanttInput" style="width: 600px;height: 150px;">
+        [
+            {
+                "_type":"legend",
+                "#967008":"Type1",
+                "#F98B88":"Type2",
+                "#0C53D9":"Type3"
+            },
+            {
+                "_type":"keydate",
+                "Date":"2021-09-15",
+                "Name":"Special Date 1"
+            },
+            {
+                "_type":"keydate",
+                "Date":"2021-12-15",
+                "Name":"Special Date 2"
+            },
+            {
+                "Category":"Cat1",
+                "Start_Date": "2021-08-16",
+                "End_Date": "2021-09-01",
+                "Long": "Event one, long desc",
+                "Name": "Event one",
+                "id": 0,
+                "prog": 75
+                
+            },
+            {
+                "Category":"Cat1",
+                "Start_Date": "2021-09-01",
+                "End_Date": "2021-09-16",
+                "Long": "Event two, long desc",
+                "Name": "Event two",
+                "id": 1,
+                "prog": 25,
+                "dep": "0",
+                "fill":"#0C53D9"
+            },
+            {
+                "Category":"Cat2",
+                "Start_Date": "2022-01-01",
+                "End_Date": "2022-03-01",
+                "Long": "Name three, long",
+                "Name":"Name three",
+                "id": 2,
+                "prog": 0,
+                "dep": "1",
+                "ignore":0
+            },
+            {
+                "Category":"Cat1",
+                "Start_Date": "2021-12-01",
+                "End_Date": "2021-12-25",
+                "Long": "Event, long desc",
+                "Name": "Event",
+                "id": 7,
+                "prog": 25,
+                "dep": ""
+                
+            },
+            {
+                "Category":"Cat3",
+                "Start_Date": "2022-04-01",
+                "End_Date": "2022-06-01",
+                "Long": "Ignored event, long",
+                "Name":"Ignored event",
+                "id": 3,
+                "prog": 0,
+                "dep": "",
+                "ignore":1
+            },
+            {
+                "Category":"Cat3",
+                "Start_Date": "2021-10-01",
+                "End_Date": "2022-04-01",
+                "Long": "Long Event, long",
+                "Name":"Long event",
+                "id": 9,
+                "prog": 75,
+                "dep": "10",
+                "fill": "#F98B88"
+               
+            },
+            {
+                "Category":"Cat3",
+                "Start_Date": "2021-09-01",
+                "End_Date": "2021-09-10",
+                "Long": "Short, long desc",
+                "Name":"Short Event",
+                "id": 10,
+                "prog": 25,
+                "dep": ""
+               
+            },
+            {
+                "Category":"Cat2",
+                "Start_Date": "2022-04-02",
+                "End_Date": "2022-05-01",
+                "Long": "Name four, long",
+                "Name":"Name four",
+                "id": 4,
+                "prog": 10,
+                "dep": "1",
+                "fill":"#967008"
+            }
+            
+        ]
+        </textarea>
+	
+    </div>
+</body>
