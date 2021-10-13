@@ -1,7 +1,8 @@
 # gannt-d3
-Build Gannt charts with custom json
+Build Gannt charts with custom json with D3 v4
 ## Output
-![Alt text](example.jpg?raw=true "Example")
+![Alt text](example.png?raw=true "Example")
+
 ## Usage
 General input format
 ```
@@ -35,4 +36,9 @@ Legend, optional
     "#0C53D9":"Type3"
 },
 ```
+## Run
+Host script locally (MAC exmaple)
+```
+php -S localhost:8080
+``
 
