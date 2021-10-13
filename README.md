@@ -1,5 +1,5 @@
 # gannt-d3
-Build Gannt charts with custom json with D3 v4
+Build Gannt charts with custom json and <a href="https://d3js.org/">D3</a> v4
 ## Output
 ![Alt text](example.png?raw=true "Example")
 
