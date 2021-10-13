@@ -37,8 +37,8 @@ Legend, optional
 },
 ```
 ## Run
-Host script locally (MAC exmaple)
+Host script locally (exmaple on macOS w/php)
 ```
 php -S localhost:8080
-``
+```
 
